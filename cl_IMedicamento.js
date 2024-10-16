@@ -22,7 +22,7 @@ leerAñadirNuevoUsuario() {
 reportesParaSalida(monto) {
     return `
     <br>
-    <br>Monto vendido del medicamento numero ${this.contadorIteraciones} fue de un valor de $${monto} 
+    <br>Monto vendido del medicamento numero ${this.contadorIteraciones} fue de un valor de ${(monto).toFixed(2)}$$
     <br>
     
     `;
