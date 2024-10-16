@@ -16,7 +16,7 @@ leerCantidadVendidaDeMedicamentos(){
 }
 
 leerAñadirNuevoUsuario() {
-    return +prompt("DESEA AGREGAR UN NUEVO MEDICAMENTO 1=SI PRESIONE 2=NO");
+    return +prompt("DESEA AGREGAR UN NUEVO MEDICAMENTO PRESIONE 1=SI  2=NO");
 }
 
 reportesParaSalida(monto) {
