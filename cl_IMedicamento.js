@@ -3,6 +3,11 @@ export default class iMedicamento{
 constructor(){
  this.contadorIteraciones = 1;
 }
+
+leerNombreMedicamento() {
+    return prompt(`ingrese el nombre del medicamento numero ${this.contadorIteraciones}`);
+}
+
 leercodigoMedicamento() {
     return prompt(`ingrese el codigo del medicamento numero ${this.contadorIteraciones}`);
 }
@@ -15,14 +20,19 @@ leerCantidadVendidaDeMedicamentos(){
     return prompt (`ingrese la cantidad vendida del medicamento numero ${this.contadorIteraciones} `)
 }
 
-leerAñadirNuevoUsuario() {
-    return +prompt("DESEA AGREGAR UN NUEVO MEDICAMENTO 1=SI PRESIONE 2=NO");
+leerTipoDeMedicamento(){
+    return +prompt (`ìngrese el tipo del medicamento numero ${this.contadorIteraciones}PRESIONE 1=NACIONAL  2=IMPORTADO `)
 }
 
-reportesParaSalida(monto) {
+leerAñadirNuevoUsuario() {
+    return +prompt("DESEA AGREGAR UN NUEVO MEDICAMENTO PRESIONE 1=SI  2=NO");
+}
+
+reportesParaSalida(monto,tipoDeMedicamento) {
     return `
     <br>
     <br>Monto vendido del medicamento numero ${this.contadorIteraciones} fue de un valor de ${(monto).toFixed(2)}$$
+    <br>El medicamento  ${this.contadorIteraciones}  ${tipoDeMedicamento}
     <br>
     
     `;
